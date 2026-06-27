@@ -1,0 +1,22 @@
+numpy>=1.24,<2.0
+opencv-python>=4.8
+scipy>=1.10
+Pillow>=10.0
+PyYAML>=6.0
+ultralytics>=8.1
+boxmot>=10.0
+torch>=2.0
+torchvision>=0.15
+lightgbm>=4.0
+PyQt6>=6.5
+shapely>=2.0
+matplotlib>=3.7
+
+# Гомография использует код PnLCalib. Репозиторий клонируется рядом
+#   git clone https://github.com/mguti97/PnLCalib.git
+#
+# ВАЖНО: НЕ запускайте `pip install -r PnLCalib/requirements.txt` - это
+# пиновый freeze всего окружения (numpy==2.0.2, PyQt5, cuda-колёса),
+# конфликтующий с этим проектом. Все нужные нашему пути зависимости
+# PnLCalib уже перечислены выше (torch, numpy, opencv, scipy, shapely,
+# matplotlib, Pillow, PyYAML).
