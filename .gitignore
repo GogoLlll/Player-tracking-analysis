@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- Виртуальные окружения ----
+.venv/
+.venv311/
+venv/
+env/
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.swp
+
+# ---- Веса моделей ----
+models/
+*.pt
+*.pth
+*.onnx
+osnet_*.pt
+
+# ---- Данные и результаты (большие) ----
+dataset/
+results/
+data/
+out/
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# ---- Кэш гомографии и экспортируемая аналитика ----
+homography.npz
+*.npz
+*.csv
+*.json
+
+# ---- Внешние репозитории (клонируются отдельно) ----
+LightGlue/
+PnLCalib/
